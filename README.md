@@ -6,7 +6,7 @@ The famous snake game.
 =====
 
 Requirements: 
-- PyGamee 
+- PyGame
 
 On a Debian based Linux system you can install Pygame with:
 
