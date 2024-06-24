@@ -3,7 +3,7 @@ import pygame as pg
 import time
 import random
 
-from Queue import Queue
+from queue import Queue
 from pygame.locals import *
 
 DIMENSION = 6*5*5*2*2
@@ -112,7 +112,7 @@ while RUN:
 
     if not GAMEOVER:
         screen.fill(black)
-        pg.draw.rect(screen, pg.Color("white"),(0,0,X,Y), DOTSIZE)
+        pg.draw.rect(screen, pg.Color("white"),(0,0,int(X),int(Y)), int(DOTSIZE))
         for apple in applelist:
             al = copy.copy(apple.location)
             al[1] -= 7
